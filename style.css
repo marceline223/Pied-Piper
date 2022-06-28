@@ -1,15 +1,10 @@
 @import url("normalize.css");
 
-header {
-    background-color: #007765;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
+body {
+    font-family: Roboto, sans-serif;
 }
 
-.main_container {
+.content {
     width: 100%;
     max-width: 1219px;
     margin-left: auto;
@@ -18,44 +13,7 @@ header {
     padding-right: 55px;
 }
 
-.pic_with_label {
-    background-image: url(img/img.png);
-    background-size: cover;
-    width: 100%;
-    padding: 160px 0;
-}
-
-.pic_with_label2 {
-    background-image: url(img/img2.png);
-    background-size: cover;
-    width: 100%;
-    padding: 128px 0;
-}
-
-#the_problem,
-#pied_piper_coin,
-#the_team p {
-    font-size: 32px;
-    text-align: justify;
-}
-
-.header_container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /*Как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера*/
-}
-
-/*меняется цвет фона только у этого блока*/
-body #pied_piper_coin {
-    background-color: #FFFFFF;
-}
-
-body {
-    background-color: #EEEEEE;
-    font-family: Roboto, sans-serif;
-}
+/*-----------ТЕКСТ------------*/
 
 h2 {
     color: #007765;
@@ -64,39 +22,82 @@ h2 {
     font-style: normal;
 }
 
-#logo {
-    width: 184px;
-    margin: 20px 55px;
+/*-----------РАЗДЕЛЫ------------*/
+
+#the_problem,
+#the_team {
+    background-color: #EEEEEE;
 }
 
-.pic_with_label p {
-    text-align: center;
-    font-size: 72px;
-    font-style: bold;
-    color: #FFFFFF;
+#pied_piper_coin {
+    background-color: #FFFFFF;
 }
 
-.pic_with_label2 p {
-    text-align: center;
-    font-size: 48px;
-    font-style: italic;
-    color: #FFFFFF;
+#the_problem,
+#pied_piper_coin,
+#the_team p {
+    font-size: 32px;
+    text-align: justify;
+
+    /*-----------------для корректной навигации --------------------*/
+    border-top: 84px solid transparent;
+    margin-top: -84px;
+    background-clip: padding-box;
+    padding-bottom: 92px;
 }
 
-nav,
-nav a {
+/*-----------ШАПКА------------*/
+
+header {
+    background-color: #007765;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 21;
+}
+
+.header_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav, a {
     color: #FFFFFF;
     font-size: 24px;
     text-decoration: none;
 }
 
-#the_problem,
-#pied_piper_coin,
-#the_team {
-    border-top: 84px solid transparent;
-    margin-top: -84px;
-    background-clip: padding-box;
-    padding-bottom: 92px;
+/*-----------КАРТИНКА С НАЛПИСЬЮ------------*/
+
+.pic_with_label {
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pic_with_label#first {
+    background-image: url(img/img.png);
+    padding: 160px 0;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.pic_with_label#second {
+    background-image: url(img/img2.png);
+    padding: 128px 0;
+    font-size: 48px;
+    font-style: italic;
+}
+
+/*-----------ИЗОБРАЖЕНИЯ------------*/
+
+#logo {
+    width: 184px;
+    margin: 20px 55px;
 }
 
 #PPC_Logo {
@@ -104,6 +105,20 @@ nav a {
     height: 115px;
     float: left;
     padding-right: 35px;
+}
+
+.person_card img {
+    width: 168px;
+    height: 168px;
+}
+
+/*-----------РАЗДЕЛ О СОТРУДНИКАХ------------*/
+.table {
+    margin: 0; /*Расстояние от края элемента до края другог элемента*/
+    padding: 0; /*Устанавливает значение полей вокруг содержимого элемента*/
+    display: flex; /*Определяет как элемент должен быть показан в документе*/
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .person_card {
@@ -114,12 +129,6 @@ nav a {
     text-align: center;
     padding-bottom: 55px;
 }
-
-.person_card img {
-    width: 168px;
-    height: 168px;
-}
-
 
 .name {
     color:#007765;
@@ -133,14 +142,7 @@ nav a {
     font-style: italic;
 }
 
-.table {
-    margin: 0; /*Расстояние от края элемента до края другог элемента*/
-    padding: 0; /*Устанавливает значение полей вокруг содержимого элемента*/
-    display: flex; /*Определяет как элемент должен быть показан в документе*/
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
+/*-----------ФУТЕР------------*/
 footer {
     background-color: #333333;
     width: 100%;
@@ -150,9 +152,8 @@ footer {
 }
 
 footer p {
-    padding: 48px 0;
+    padding: 48px 340px 64px 339px;
     text-align: center;
-    width: 540px;
     margin: 0 auto;
     font-size: 18px;
 }

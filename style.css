@@ -38,7 +38,11 @@ h2 {
 #the_team p {
     font-size: 32px;
     text-align: justify;
+}
 
+#the_problem,
+#pied_piper_coin,
+#the_team {
     /*-----------------для корректной навигации --------------------*/
     border-top: 84px solid transparent;
     margin-top: -84px;
@@ -64,7 +68,8 @@ header {
     justify-content: space-between;
 }
 
-nav, a {
+nav,
+a {
     color: #FFFFFF;
     font-size: 24px;
     text-decoration: none;
@@ -114,9 +119,12 @@ nav, a {
 
 /*-----------РАЗДЕЛ О СОТРУДНИКАХ------------*/
 .table {
-    margin: 0; /*Расстояние от края элемента до края другог элемента*/
-    padding: 0; /*Устанавливает значение полей вокруг содержимого элемента*/
-    display: flex; /*Определяет как элемент должен быть показан в документе*/
+    margin: 0;
+    /*Расстояние от края элемента до края другог элемента*/
+    padding: 0;
+    /*Устанавливает значение полей вокруг содержимого элемента*/
+    display: flex;
+    /*Определяет как элемент должен быть показан в документе*/
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -131,7 +139,7 @@ nav, a {
 }
 
 .name {
-    color:#007765;
+    color: #007765;
     font-size: 24px;
     font-weight: bold;
     padding-top: 12px;

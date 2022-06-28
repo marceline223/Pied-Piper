@@ -19,14 +19,14 @@ header {
 }
 
 .pic_with_label{
-    background-image: url(img.png);
+    background-image: url(img/img.png);
     background-size: cover;
     width: 100%;
     padding: 160px 0;
 }
 
 .pic_with_label2{
-    background-image: url(img2.png);
+    background-image: url(img/img2.png);
     background-size: cover;
     width: 100%;
     padding: 128px 0;

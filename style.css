@@ -1,0 +1,101 @@
+@import url("normalize.css");
+
+header {
+    background-color: #007765;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.main_container {
+    width: 100%;
+    max-width: 1219px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.pic_with_label{
+    background-image: url(img.png);
+    background-size: cover;
+    width: 100%;
+    padding: 160px 0;
+}
+
+.pic_with_label2{
+    background-image: url(img2.png);
+    background-size: cover;
+    width: 100%;
+    padding: 128px 0;
+}
+
+p {
+    font-size: 32px;
+    text-align: justify;
+}
+
+.header_container {
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера*/
+}
+
+/*меняется цвет фона только у этого блока*/
+body #pied_piper_coin {
+    background-color: #FFFFFF;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: Roboto, sans-serif;
+}
+
+h2 {
+    color: #007765;
+    font-size: 64px;
+    text-align: center;
+    font-style: normal;
+}
+
+#logo {
+    width: 184px;
+    margin: 20px 55px;
+}
+
+.pic_with_label p {
+    text-align: center;
+    font-size: 72px;
+    font-style: bold;
+    color: #FFFFFF;
+}
+
+.pic_with_label2 p {
+    text-align: center;
+    font-size: 48px;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+nav, nav a {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#the_problem, #pied_piper_coin, #the_team {
+    border-top: 84px solid transparent;
+    margin-top: -84px;
+    background-clip: padding-box;
+    padding-bottom: 92px;
+}
+
+#PPC_Logo{
+    width: 115px;
+    height: 115px;
+    float: left;
+    padding-right: 35px;
+}

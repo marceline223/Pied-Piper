@@ -18,30 +18,33 @@ header {
     padding-right: 55px;
 }
 
-.pic_with_label{
+.pic_with_label {
     background-image: url(img/img.png);
     background-size: cover;
     width: 100%;
     padding: 160px 0;
 }
 
-.pic_with_label2{
+.pic_with_label2 {
     background-image: url(img/img2.png);
     background-size: cover;
     width: 100%;
     padding: 128px 0;
 }
 
-p {
+#the_problem,
+#pied_piper_coin,
+#the_team p {
     font-size: 32px;
     text-align: justify;
 }
 
 .header_container {
-    height: 100%; 
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; /*Как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера*/
+    justify-content: space-between;
+    /*Как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера*/
 }
 
 /*меняется цвет фона только у этого блока*/
@@ -80,22 +83,76 @@ h2 {
     color: #FFFFFF;
 }
 
-nav, nav a {
+nav,
+nav a {
     color: #FFFFFF;
     font-size: 24px;
     text-decoration: none;
 }
 
-#the_problem, #pied_piper_coin, #the_team {
+#the_problem,
+#pied_piper_coin,
+#the_team {
     border-top: 84px solid transparent;
     margin-top: -84px;
     background-clip: padding-box;
     padding-bottom: 92px;
 }
 
-#PPC_Logo{
+#PPC_Logo {
     width: 115px;
     height: 115px;
     float: left;
     padding-right: 35px;
+}
+
+.person_card {
+    width: 350px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.person_card img {
+    width: 168px;
+    height: 168px;
+}
+
+
+.name {
+    color:#007765;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+.profession {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.table {
+    margin: 0; /*Расстояние от края элемента до края другог элемента*/
+    padding: 0; /*Устанавливает значение полей вокруг содержимого элемента*/
+    display: flex; /*Определяет как элемент должен быть показан в документе*/
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #333333;
+    width: 100%;
+    color: #FFFFFF;
+    height: 176px;
+    text-align: center;
+}
+
+footer p {
+    padding: 48px 0;
+    text-align: center;
+    width: 540px;
+    margin: 0 auto;
+    font-size: 18px;
 }
